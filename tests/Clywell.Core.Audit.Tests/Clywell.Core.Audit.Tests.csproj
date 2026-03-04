@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Test Framework -->
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+
+        <!-- Mocking -->
+        <PackageReference Include="Moq" />
+
+        <!-- Code Coverage -->
+        <PackageReference Include="coverlet.collector" />
+
+        <!-- DI Container for integration tests -->
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- Reference the package being tested -->
+        <ProjectReference Include="..\..\src\Clywell.Core.Audit\Clywell.Core.Audit.csproj" />
+    </ItemGroup>
+
+</Project>

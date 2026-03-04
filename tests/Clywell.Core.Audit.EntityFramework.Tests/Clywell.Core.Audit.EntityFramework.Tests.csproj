@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Test Framework -->
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+
+        <!-- Mocking -->
+        <PackageReference Include="Moq" />
+
+        <!-- Code Coverage -->
+        <PackageReference Include="coverlet.collector" />
+
+        <!-- In-Memory / Sqlite for integration testing -->
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <!-- Reference the packages being tested -->
+        <ProjectReference Include="..\..\src\Clywell.Core.Audit\Clywell.Core.Audit.csproj" />
+        <ProjectReference
+            Include="..\..\src\Clywell.Core.Audit.EntityFramework\Clywell.Core.Audit.EntityFramework.csproj" />
+    </ItemGroup>
+
+</Project>
