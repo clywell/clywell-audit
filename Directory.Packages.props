@@ -1,0 +1,35 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- DI Abstractions -->
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+            Version="10.0.0" />
+
+        <!-- Entity Framework Core (for EF implementation package) -->
+        <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+
+        <!-- Test Framework -->
+        <PackageVersion Include="xunit" Version="2.9.3" />
+        <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.5" />
+        <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="18.3.0" />
+
+        <!-- Mocking -->
+        <PackageVersion Include="Moq" Version="4.20.72" />
+
+        <!-- Code Coverage -->
+        <PackageVersion Include="coverlet.collector" Version="8.0.0" />
+
+        <!-- Integration Testing -->
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.3" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
+
+        <!-- Versioning -->
+        <PackageVersion Include="Nerdbank.GitVersioning" Version="3.9.50" />
+
+        <!-- Source Link -->
+        <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="10.0.103" />
+    </ItemGroup>
+</Project>
