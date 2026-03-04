@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <!-- Package Identity -->
+        <PackageId>Clywell.Core.Audit</PackageId>
+        <Description>Audit trail abstractions for .NET — entity change tracking models, audit
+            logging interfaces,
+            and direct audit API. Zero infrastructure dependency for Application layer usage.</Description>
+        <PackageTags>clywell;audit;audit-trail;change-tracking;clean-architecture</PackageTags>
+
+        <!-- URLs -->
+        <PackageProjectUrl>https://github.com/clywell/clywell-audit</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/clywell/clywell-audit</RepositoryUrl>
+
+        <!-- Include README in package -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
+
+    <!-- Dependencies -->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    </ItemGroup>
+
+    <!-- Test access to internal types -->
+    <ItemGroup>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>Clywell.Core.Audit.Tests</_Parameter1>
+        </AssemblyAttribute>
+        <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+            <_Parameter1>Clywell.Core.Audit.EntityFramework</_Parameter1>
+        </AssemblyAttribute>
+    </ItemGroup>
+
+    <!-- Versioning -->
+    <ItemGroup>
+        <PackageReference Include="Nerdbank.GitVersioning">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <!-- Source Link -->
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
