@@ -6,10 +6,10 @@
     <ItemGroup>
         <!-- DI Abstractions -->
         <PackageVersion Include="Microsoft.Extensions.DependencyInjection.Abstractions"
-            Version="10.0.3" />
+            Version="10.0.5" />
 
         <!-- Entity Framework Core (for EF implementation package) -->
-        <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.3" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="10.0.5" />
 
         <!-- Test Framework -->
         <PackageVersion Include="xunit" Version="2.9.3" />
@@ -23,8 +23,8 @@
         <PackageVersion Include="coverlet.collector" Version="8.0.0" />
 
         <!-- Integration Testing -->
-        <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.3" />
-        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.3" />
+        <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.5" />
+        <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.5" />
 
         <!-- Versioning -->
         <PackageVersion Include="Nerdbank.GitVersioning" Version="3.9.50" />
